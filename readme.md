@@ -207,7 +207,7 @@ Requirements
 In case the interactive plots do not show up in the notebooks use: jupyter nbextension install --py --sys-prefix k3d
 
 ### Example
-After fetching both the data and the devkit, please refer to these manuals for several examples of how to use them, including data loading, fetching and applying transformations, and 2D/3D visualization: [tutorial.ipynb](https://github.com/WaterScenes/WaterScenes/blob/main/tutorial.ipynb)
+After fetching both the data and the devkit, please refer to these manuals for several examples of how to use them, including data loading, fetching and applying transformations, and 2D/3D visualization: [Tutorial.ipynb](https://github.com/WaterScenes/WaterScenes/blob/main/Tutorial.ipynb)
 
 
 ## Acknowledgement
