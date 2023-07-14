@@ -3,6 +3,8 @@ A Multi-Task 4D Radar-Camera Fusion Dataset for Autonomous Driving on Water Surf
 
 Website: [https://waterscenes.github.io](https://waterscenes.github.io)
 
+arXiv: [https://arxiv.org/abs/2307.06505](https://arxiv.org/abs/2307.06505)
+
 <img src='image/cover.png' width=650 /> 
 
 ## Overview
@@ -216,5 +218,13 @@ After fetching both the data and the devkit, please refer to these manuals for s
 ## Citation
 Please use the following citation when referencing
 ```
+@misc{yao2023waterscenes,
+      title={WaterScenes: A Multi-Task 4D Radar-Camera Fusion Dataset and Benchmark for Autonomous Driving on Water Surfaces}, 
+      author={Shanliang Yao and Runwei Guan and Zhaodong Wu and Yi Ni and Zixian Zhang and Zile Huang and Xiaohui Zhu and Yutao Yue and Yong Yue and Hyungjoon Seo and Ka Lok Man},
+      year={2023},
+      eprint={2307.06505},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
