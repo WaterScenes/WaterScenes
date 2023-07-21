@@ -26,7 +26,7 @@ arXiv: [https://arxiv.org/abs/2307.06505](https://arxiv.org/abs/2307.06505)
 * We provide **2D box-level** and **pixel-level** annotations for camera images, and **3D point-level** annotations for radar point clouds. We also offer precise timestamps for the synchronization of different sensors, as well as intrinsic and extrinsic parameters.
 * We provide a toolkit for radar point clouds that includes: **pre-processing**, **labeling**, **projection** and **visualization**, assisting researchers in processing and analyzing our dataset.
 
-Sample dataset: [https://drive.google.com/uc?id=1j6BxP6tpaenYl8ADa9v-kC0I_jWob4Ji&export=download]()
+Sample dataset: [https://drive.google.com/uc?id=1j6BxP6tpaenYl8ADa9v-kC0I_jWob4Ji&export=download](https://drive.google.com/uc?id=1j6BxP6tpaenYl8ADa9v-kC0I_jWob4Ji&export=download)
 
 ### USV Setup
 <img src='image/USV-setup.png' width=650 /> 
