@@ -71,8 +71,8 @@ class WaterScenes:
     def plot_radar_pcl(self):
 
         radar = self.dataloader.radar_data
-        # radar = radar.append({'u': -1, 'v': -1, 'range': 100, 'rcs': 1}, ignore_index=True)
-        power = radar['rcs']
+        # radar = radar.append({'u': -1, 'v': -1, 'range': 100, 'power': 1}, ignore_index=True)
+        power = radar['power']
         points_depth = radar['range']
 
         plt.scatter(radar['u'], radar['v'], c=-points_depth, s=power * power, alpha=0.8, cmap='jet')
@@ -87,7 +87,7 @@ class WaterScenes:
 
     def plot_radar_label(self):
         radar = self.dataloader.radar_data
-        idx = radar['label'] != 0
+        idx = radar['label'] != -1
         uvs = radar[idx]
         plt.scatter(uvs['u'], uvs['v'], alpha=0.8, cmap='jet', marker="*")
 
@@ -96,7 +96,7 @@ class WaterScenes:
         if frames == 1:
             radar = self.dataloader.radar_data
             labels = np.array(radar[['label']]).squeeze(1)
-            labels_3D = ['r' if c > 0 else 'b' for c in labels]
+            labels_3D = ['r' if c > -1 else 'b' for c in labels]
 
         if frames == 3:
             radar = self.dataloader.radar_3_frames_data
@@ -110,7 +110,7 @@ class WaterScenes:
         if coordinate == 'Cartesian':
             ax.scatter(radar[['x']], radar[['y']], radar[['z']],
                        cmap='spectral',
-                       s=radar[['rcs']],
+                       s=radar[['power']],
                        linewidth=0,
                        alpha=1,
                        marker=".",
@@ -122,7 +122,7 @@ class WaterScenes:
         if coordinate == 'World':
             ax.scatter(radar[['x']], radar[['z']], -radar[['y']],
                        cmap='spectral',
-                       s=radar[['rcs']],
+                       s=radar[['power']],
                        linewidth=0,
                        alpha=1,
                        marker=".",

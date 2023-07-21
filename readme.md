@@ -16,7 +16,8 @@ arXiv: [https://arxiv.org/abs/2307.06505](https://arxiv.org/abs/2307.06505)
 
 ## Changelog
 - July 13, 2023: Website and Devkit released.
-- Dataset to be released.
+- July 21, 2023: Sample dataset released.
+- Dataset will be public soon.
 
 ## Dataset
 ### Introduction
@@ -24,6 +25,8 @@ arXiv: [https://arxiv.org/abs/2307.06505](https://arxiv.org/abs/2307.06505)
 * Our dataset covers diverse **time conditions** (daytime, nightfall, night), **lighting conditions** (normal, dim, strong), **weather conditions** (sunny, overcast, rainy, snowy) and **waterway conditions** (river, lake, canal, moat). An information list is also offered for retrieving specific data for experiments under different conditions.
 * We provide **2D box-level** and **pixel-level** annotations for camera images, and **3D point-level** annotations for radar point clouds. We also offer precise timestamps for the synchronization of different sensors, as well as intrinsic and extrinsic parameters.
 * We provide a toolkit for radar point clouds that includes: **pre-processing**, **labeling**, **projection** and **visualization**, assisting researchers in processing and analyzing our dataset.
+
+Sample dataset: [https://drive.google.com/uc?id=1j6BxP6tpaenYl8ADa9v-kC0I_jWob4Ji&export=download]()
 
 ### USV Setup
 <img src='image/USV-setup.png' width=650 /> 
@@ -98,9 +101,9 @@ WaterScenes (root)
     - 000001.jpg
   - radar # radar files
     - 000001.csv
-  - radar_3_frames # radar files of last 3 frames
+  - radar_3_frames # 3 frames before and after current timestamp
     - 000001.csv
-  - radar_5_frames # radar files of last 5 frames
+  - radar_5_frames # 5 frames before and after current timestamp
     - 000001.csv
   - calib # intrisic and extrisic parameters
     - 000001.txt
@@ -108,27 +111,42 @@ WaterScenes (root)
     - 000001.csv
   - imu # imu file
     - 000001.csv
-  - detection # annitation files for object detection task
-    - 000001.txt
-  - semantic # annitation files for semantic segmentation task
-  - free_space # annitation files for free-space segmentation task
-  - waterline # annitation files for waterline segmentation task
+  - detection # annotation files for object detection task
+    - yolo 
+      - 000001.txt
+  - instance # annotation files for instance segmentation task
+    - yolo 
+      - 000001.txt
+    - labelme 
+      - 000001.json
+  - semantic # annotation files for semantic segmentation task
+    - SegmentationClass 
+      - 000001.txt
+    - label_mapping.txt
+  - free_space # annotation files for free-space segmentation task
+    - SegmentationClass 
+      - 000001.txt
+    - label_mapping.txt
+  - waterline # annotation files for waterline segmentation task
+    - SegmentationClass 
+      - 000001.txt
+    - label_mapping.txt
 
 ```
 
 ### Labels
-| Code | Label      | Note                                    |
-|------|------------|-----------------------------------------|
-| -1   | no-object  | No object. Only for radar point clouds  |
-| 0    | pier       | Static object                           |
-| 1    | buoy       | Static object                           |
-| 2    | sailor     | Person on the surface vehicles          |
-| 3    | ship       |                                         |
-| 4    | boat       |                                         |
-| 5    | vessel     |                                         |
-| 6    | kayak      |                                         |
-| -    | free-space | Only for instance/semantic segmentation |
-| -    | waterline  | Only for waterline segmentation         |
+| Code | Label      | Note                                               |
+|------|------------|----------------------------------------------------|
+| -1   | no-object  | No object. Only for radar point clouds             |
+| 0    | pier       | Static object                                      |
+| 1    | buoy       | Static object                                      |
+| 2    | sailor     | Person on the surface vehicles                     |
+| 3    | ship       |                                                    |
+| 4    | boat       |                                                    |
+| 5    | vessel     |                                                    |
+| 6    | kayak      |                                                    |
+| -    | free-space | Only for instance/semantic/free-space segmentation |
+| -    | waterline  | Only for waterline segmentation                    |
 
 ### Radar Format
 Radar point clouds are stored in csv files.
@@ -152,11 +170,9 @@ Each csv file contains a set of points in a specific timestamp:
 | z             | z value in the XYZ coordinates                                  |
 | comp_height   | absolute height of the point (in m)                             |
 | comp_velocity | absolute velocity of the point (in m/s)                         |
-| host_speed    | ego-USV speed (in m/s)                                          |
-| host_yaw      | ego-USV yaw (in degree)                                         |
 | u             | x-axis on the image plane                                       |
 | v             | y-axis on the image plane                                       |
-| label         | semantic class id of the object to which this detection belongs |
+| label         | semantic class id of the object （Refer to [Labels](#labels)）   |
 | instance      | instance id of the object to which this detection belongs       |
 
 ### GPS Format
