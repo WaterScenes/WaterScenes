@@ -18,6 +18,10 @@ class DataLoader:
         return self.get_radar_data()
 
     @property
+    def radar_3_frames_data(self):
+        return self.get_radar_3_frames_data()
+
+    @property
     def label_data(self):
         return self.get_label_data()
 
@@ -60,6 +64,9 @@ class DataLoader:
     def get_radar_data(self):
         return pd.read_csv(os.path.join(self.dataset_path, 'radar', f'{self.frame}.csv'))
 
+    def get_radar_3_frames_data(self):
+        return pd.read_csv(os.path.join(self.dataset_path, 'radar_3_frames', f'{self.frame}.csv'))
+
     def get_t_camera_radar(self):
         with open(os.path.join(self.dataset_path, 'calib', f"{self.frame}.txt"), "r") as f:
             lines = f.readlines()
@@ -73,4 +80,3 @@ class DataLoader:
             matrix = np.array(lines[1].strip().split(' ')[1:], dtype=np.float32).reshape(3, 4)
 
         return matrix
-
