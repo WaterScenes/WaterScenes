@@ -89,7 +89,7 @@ class WaterScenes:
         radar = self.dataloader.radar_data
         idx = radar['label'] != -1
         uvs = radar[idx]
-        plt.scatter(uvs['u'], uvs['v'], alpha=0.8, cmap='jet', marker="*")
+        plt.scatter(uvs['u'], uvs['v'], alpha=0.8, marker="*")
 
     def visualization3D(self, frames=1, coordinate='Cartesian'):
 
@@ -105,11 +105,12 @@ class WaterScenes:
             labels_3D = ['b']
 
         fig = plt.figure(dpi=200)
-        ax = Axes3D(fig)
+        # ax = Axes3D(fig)
+        ax = fig.add_subplot(projection='3d')
 
         if coordinate == 'Cartesian':
             ax.scatter(radar[['x']], radar[['y']], radar[['z']],
-                       cmap='spectral',
+                       # cmap='spectral',
                        s=radar[['power']],
                        linewidth=0,
                        alpha=1,
@@ -121,7 +122,7 @@ class WaterScenes:
 
         if coordinate == 'World':
             ax.scatter(radar[['x']], radar[['z']], -radar[['y']],
-                       cmap='spectral',
+                       # cmap='spectral',
                        s=radar[['power']],
                        linewidth=0,
                        alpha=1,

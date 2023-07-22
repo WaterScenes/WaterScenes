@@ -4,3 +4,7 @@ __pycache__
 .ipynb_checkpoints/
 WaterScenes_Samples
 WaterScenes_Samples.zip
+dist
+build
+*.egg-info
+pypi.cmd
