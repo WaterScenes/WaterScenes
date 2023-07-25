@@ -21,6 +21,9 @@ arXiv: [https://arxiv.org/abs/2307.06505](https://arxiv.org/abs/2307.06505)
 
 ## Dataset
 ### Introduction
+
+<img src='image/adverse-4.png' /> 
+
 * WaterScenes, the first **multi-task 4D radar-camera fusion dataset** on water surfaces, which offers data from multiple sensors, including a 4D radar, monocular camera, GPS, and IMU. It can be applied in multiple tasks, such as **object detection**, **instance segmentation**, **semantic segmentation**, **free-space segmentation**, and **waterline** segmentation.
 * Our dataset covers diverse **time conditions** (daytime, nightfall, night), **lighting conditions** (normal, dim, strong), **weather conditions** (sunny, overcast, rainy, snowy) and **waterway conditions** (river, lake, canal, moat). An information list is also offered for retrieving specific data for experiments under different conditions.
 * We provide **2D box-level** and **pixel-level** annotations for camera images, and **3D point-level** annotations for radar point clouds. We also offer precise timestamps for the synchronization of different sensors, as well as intrinsic and extrinsic parameters.
