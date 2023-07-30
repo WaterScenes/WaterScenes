@@ -235,6 +235,9 @@ After fetching both the data and the devkit, please refer to these manuals for s
 * We referred to the [nuScenes](https://github.com/nutonomy/nuscenes-devkit), [RadarScenes](https://github.com/oleschum/radar_scenes) and [View of Delft](https://github.com/tudelft-iv/view-of-delft-dataset) datasets, and are grateful to their websites and github repositories.
 
 ## Citation
+
+The WaterScenes data is published under CC BY-NC-SA 4.0 license, which means that anyone can use this dataset for non-commercial research purposes.
+
 Please use the following citation when referencing
 ```
 @misc{yao2023waterscenes,
