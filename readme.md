@@ -242,7 +242,7 @@ Please use the following citation when referencing
 ```
 @misc{yao2023waterscenes,
       title={WaterScenes: A Multi-Task 4D Radar-Camera Fusion Dataset and Benchmark for Autonomous Driving on Water Surfaces}, 
-      author={Shanliang Yao and Runwei Guan and Zhaodong Wu and Yi Ni and Zixian Zhang and Zile Huang and Xiaohui Zhu and Yutao Yue and Yong Yue and Hyungjoon Seo and Ka Lok Man},
+      author={Shanliang Yao and Runwei Guan and Zhaodong Wu and Yi Ni and Zile Huang and Zixian Zhang and Yong Yue and Weiping Ding and Eng Gee Lim and Hyungjoon Seo and Ka Lok Man and Xiaohui Zhu and Yutao Yue},
       year={2023},
       eprint={2307.06505},
       archivePrefix={arXiv},
