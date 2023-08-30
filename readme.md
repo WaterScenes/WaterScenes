@@ -219,11 +219,9 @@ Requirements
 
 1. Clone the repository: `https://github.com/WaterScenes/WaterScenes.git`
 
-2. Inside the root folder, use the environment.yml to create a new conda environment using: `conda env create -f environment.yml`
+2. Inside the root folder, install the requirements using `pip install -r requirements.txt`
 
-3. Activate the environment using: `conda activate waterscenes`
-
-4. In the same terminal windows typing `jupyter notebook` will start the notebook server.
+3. In the same terminal windows typing `jupyter notebook` will start the notebook server.
 
 In case the interactive plots do not show up in the notebooks use: jupyter nbextension install --py --sys-prefix k3d
 
