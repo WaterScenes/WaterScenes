@@ -13,9 +13,14 @@ class WaterScenes:
         self.dataset_path = dataset_path
         self.dataloader = DataLoader(self.dataset_path, frame)
 
+        self.visualization_path = 'visualization'
+        if not os.path.exists(self.visualization_path):
+            os.mkdir(self.visualization_path)
+
     def visualization(self, show_labels=False,
                       show_radar_label=False,
                       show_radar=False,
+                      show_radar_on_blank=False,
                       plot_figure=True,
                       save_figure=False):
         fig = plt.figure(figsize=(19.2, 10.8))
@@ -34,15 +39,15 @@ class WaterScenes:
         if show_radar_label:
             self.plot_radar_label()
 
-        plt.imshow(self.dataloader.image, alpha=1)
+        if show_radar_on_blank:
+            plt.imshow(plt.imread('WaterScenes/image/blank.jpg'), alpha=1)
+        else:
+            plt.imshow(self.dataloader.image, alpha=1)
         # plt.colorbar()
         plt.axis('off')
 
         if save_figure:
-            visualization_path = 'visualization'
-            if not os.path.exists(visualization_path):
-                os.mkdir(visualization_path)
-            plt.savefig(visualization_path + f'/{self.dataloader.frame}.png')
+            plt.savefig(self.visualization_path + f'/{self.dataloader.frame}_projection.png')
 
         if plot_figure:
             plt.show()
@@ -91,6 +96,25 @@ class WaterScenes:
         uvs = radar[idx]
         plt.scatter(uvs['u'], uvs['v'], alpha=0.8, marker="*")
 
+    def generate_radar_map(self):
+        fig = plt.figure(figsize=(19.2, 10.8))
+        plt.subplots_adjust(top=1, bottom=0, right=1, left=0, hspace=0, wspace=0)
+        plt.margins(0, 0)
+        plt.clf()
+        fig.set_dpi(100)
+        plt.set_cmap('binary')
+
+        radar = self.dataloader.radar_data
+        labels = np.array(radar[['label']]).squeeze(1)
+        labels
+        plt.scatter(radar[['u']], radar[['v']], cmap="rainbow", alpha=1,
+                    c=labels,
+                    s=radar[['power']] + 50, )
+        plt.axis('off')
+        plt.xticks([])
+        plt.yticks([])
+        plt.imshow(plt.imread('WaterScenes/image/purple.jpg'), alpha=1)
+        plt.savefig(self.visualization_path + f'/{self.dataloader.frame}_radar_map.png',  bbox_inches='tight', dpi=200, pad_inches=0.0)
     def visualization3D(self, frames=1, coordinate='Cartesian'):
 
         if frames == 1:
