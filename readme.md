@@ -7,6 +7,8 @@
 
 <img src='image/cover.png' width=650 /> 
 
+[![](https://i2.hdslb.com/bfs/archive/9d99e604b9eec243a42510620c777e40d22ad435.jpg)](https:////player.bilibili.com/player.html?aid=292732477&bvid=BV16f4y1H7Nj&cid=397734630&p=1)
+
 ## Overview
 - [Changelog](#changelog)
 - [Dataset](#dataset)
