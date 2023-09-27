@@ -3,7 +3,8 @@
 
 * Website: [https://waterscenes.github.io](https://waterscenes.github.io)
 * arXiv: [https://arxiv.org/abs/2307.06505](https://arxiv.org/abs/2307.06505)
-* zhihu: [https://zhuanlan.zhihu.com/p/651979604](https://zhuanlan.zhihu.com/p/651979604)
+* Zhihu: [https://zhuanlan.zhihu.com/p/651979604](https://zhuanlan.zhihu.com/p/651979604)
+* Video: [https://www.bilibili.com/video/BV1QH4y1m72V](https://www.bilibili.com/video/BV1QH4y1m72V)
 
 <img src='image/cover.png' width=650 /> 
 
@@ -15,8 +16,9 @@
 - [Citation](#citation)
 
 ## Changelog
-- July 13, 2023: Website and Devkit released.
-- July 21, 2023: Sample dataset released.
+- July 13, 2023: Website and Devkit released at [Website](https://waterscenes.github.io) and [GitHub](https://github.com/WaterScenes/WaterScenes).
+- July 21, 2023: Sample dataset released at [Google Drive](https://drive.google.com/uc?id=1j6BxP6tpaenYl8ADa9v-kC0I_jWob4Ji&export=download).
+- Sep 26, 2023: Video released at [Website](https://waterscenes.github.io) and [Bilibili](https://www.bilibili.com/video/BV1QH4y1m72V).
 - Dataset will be public soon.
 
 ## Dataset
