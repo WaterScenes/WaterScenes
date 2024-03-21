@@ -36,6 +36,9 @@ Sample dataset: [https://drive.google.com/uc?id=1j6BxP6tpaenYl8ADa9v-kC0I_jWob4J
 ### USV Setup
 <img src='image/USV-setup.png' width=650 /> 
 
+### Data Collection
+<img src='image/collection.png' width=500 /> 
+
 ### Dataset Statistics
 The dataset includes 54,120 sets of RGB images, radar point clouds, GPS and IMU data, covering over 200,000 objects.
 
