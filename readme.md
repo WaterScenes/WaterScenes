@@ -101,6 +101,8 @@ The dataset includes 54,120 sets of RGB images, radar point clouds, GPS and IMU 
 </tbody>
 </table>
 
+<img src='image/categories.png' /> 
+
 ### Dataset Structure
 
 ```
