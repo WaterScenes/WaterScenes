@@ -1,12 +1,12 @@
 # <img src='image/WaterScenes-logo.png' height=40 /> 
 <h4>A Multi-Task 4D Radar-Camera Fusion Dataset for Autonomous Driving on Water Surfaces</h4>
 
+<img src='image/cover.png' width=680 /> 
+
 * Website: [https://waterscenes.github.io](https://waterscenes.github.io)
 * arXiv: [https://arxiv.org/abs/2307.06505](https://arxiv.org/abs/2307.06505)
 * Zhihu: [https://zhuanlan.zhihu.com/p/651979604](https://zhuanlan.zhihu.com/p/651979604)
 * Video: [https://www.bilibili.com/video/BV1QH4y1m72V](https://www.bilibili.com/video/BV1QH4y1m72V)
-
-<img src='image/cover.png' width=650 /> 
 
 ## Overview
 - [Changelog](#changelog)
