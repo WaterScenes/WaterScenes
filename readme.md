@@ -16,10 +16,10 @@
 - [Citation](#citation)
 
 ## Changelog
-- July 13, 2023: Website and Devkit released at [Website](https://waterscenes.github.io) and [GitHub](https://github.com/WaterScenes/WaterScenes).
-- July 21, 2023: Sample dataset released at [Google Drive](https://drive.google.com/uc?id=1j6BxP6tpaenYl8ADa9v-kC0I_jWob4Ji&export=download).
-- Sep 26, 2023: Video released at [Website](https://waterscenes.github.io) and [Bilibili](https://www.bilibili.com/video/BV1QH4y1m72V).
-- Dataset will be public soon.
+- :fire: March 28, 2024: WaterScenes dataset released at [Baidu Netdisk](https://pan.baidu.com/s/1mfYKFh9jJOdpYgs2nTe2Qg?pwd=data)
+- Sep 26, 2023: Video released at [Website](https://waterscenes.github.io) and [BiliBili](https://www.bilibili.com/video/BV1QH4y1m72V)
+- July 21, 2023: Sample dataset released at [Google Drive](https://drive.google.com/uc?id=1j6BxP6tpaenYl8ADa9v-kC0I_jWob4Ji&export=download)
+- July 13, 2023: Website and Devkit released at [Website](https://waterscenes.github.io) and [GitHub](https://github.com/WaterScenes/WaterScenes)
 
 ## Dataset
 ### Introduction
@@ -31,7 +31,6 @@
 * We provide **2D box-level** and **pixel-level** annotations for camera images, and **3D point-level** annotations for radar point clouds. We also offer precise timestamps for the synchronization of different sensors, as well as intrinsic and extrinsic parameters.
 * We provide a toolkit for radar point clouds that includes: **pre-processing**, **labeling**, **projection** and **visualization**, assisting researchers in processing and analyzing our dataset.
 
-Sample dataset: [https://drive.google.com/uc?id=1j6BxP6tpaenYl8ADa9v-kC0I_jWob4Ji&export=download](https://drive.google.com/uc?id=1j6BxP6tpaenYl8ADa9v-kC0I_jWob4Ji&export=download)
 
 ### USV Setup
 <img src='image/USV-setup.png' width=650 /> 
@@ -124,23 +123,27 @@ WaterScenes (root)
   - detection # annotation files for object detection task
     - yolo 
       - 000001.txt
+    - xml 
+      - 000001.xml
   - instance # annotation files for instance segmentation task
     - yolo 
       - 000001.txt
     - labelme 
       - 000001.json
+    - SegmentationClassPNG 
+      - 000001.png
+    - class_names.txt
   - semantic # annotation files for semantic segmentation task
     - SegmentationClass 
-      - 000001.txt
+      - 000001.png
     - label_mapping.txt
   - free_space # annotation files for free-space segmentation task
-    - SegmentationClass 
-      - 000001.txt
-    - label_mapping.txt
+    - SegmentationClassPNG 
+      - 000001.png
+    - class_names.txt
   - waterline # annotation files for waterline segmentation task
     - SegmentationClass 
-      - 000001.txt
-    - label_mapping.txt
+      - 000001.png
 
 ```
 
