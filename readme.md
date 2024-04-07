@@ -16,7 +16,7 @@
 - [Citation](#citation)
 
 ## Changelog
-- :fire: March 28, 2024: WaterScenes dataset released at [Baidu Netdisk](https://pan.baidu.com/s/1mfYKFh9jJOdpYgs2nTe2Qg?pwd=data)
+- :fire: March 28, 2024: WaterScenes dataset released at [Baidu Netdisk](https://pan.baidu.com/s/1mfYKFh9jJOdpYgs2nTe2Qg?pwd=data) and [Google Drive](https://drive.google.com/drive/folders/1SIwevcFfHXDIqlPcJEidAkAQ8AC-mW7g?usp=sharing)
 - Sep 26, 2023: Video released at [Website](https://waterscenes.github.io) and [BiliBili](https://www.bilibili.com/video/BV1QH4y1m72V)
 - July 21, 2023: Sample dataset released at [Google Drive](https://drive.google.com/uc?id=1j6BxP6tpaenYl8ADa9v-kC0I_jWob4Ji&export=download)
 - July 13, 2023: Website and Devkit released at [Website](https://waterscenes.github.io) and [GitHub](https://github.com/WaterScenes/WaterScenes)
