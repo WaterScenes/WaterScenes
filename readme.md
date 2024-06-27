@@ -16,7 +16,7 @@
 - [Citation](#citation)
 
 ## Changelog
-- :fire: June 14, 2024: WaterScenes is accepted by IEEE Transactions on Intelligent Transportation Systems (TITS)
+- :fire: June 14, 2024: WaterScenes is accepted by IEEE Transactions on Intelligent Transportation Systems (TITS) [Paper](https://ieeexplore.ieee.org/document/10571852)
 - :star2: March 28, 2024: WaterScenes dataset released at [Baidu Netdisk](https://pan.baidu.com/s/1mfYKFh9jJOdpYgs2nTe2Qg?pwd=data), Google Drive [images](https://drive.google.com/drive/folders/1ts_Jl91FlhliurzIOxx6DP2qChCGLDBj?usp=sharing) and [others](https://drive.google.com/drive/folders/1SIwevcFfHXDIqlPcJEidAkAQ8AC-mW7g?usp=sharing)
 - Sep 26, 2023: Video released at [Website](https://waterscenes.github.io) and [BiliBili](https://www.bilibili.com/video/BV1QH4y1m72V)
 - July 21, 2023: Sample dataset released at [Google Drive](https://drive.google.com/uc?id=1j6BxP6tpaenYl8ADa9v-kC0I_jWob4Ji&export=download)
@@ -249,13 +249,14 @@ The WaterScenes data is published under CC BY-NC-SA 4.0 license, which means tha
 
 Please use the following citation when referencing
 ```
-@misc{yao2023waterscenes,
-      title={WaterScenes: A Multi-Task 4D Radar-Camera Fusion Dataset and Benchmark for Autonomous Driving on Water Surfaces}, 
-      author={Shanliang Yao and Runwei Guan and Zhaodong Wu and Yi Ni and Zile Huang and Zixian Zhang and Yong Yue and Weiping Ding and Eng Gee Lim and Hyungjoon Seo and Ka Lok Man and Xiaohui Zhu and Yutao Yue},
-      year={2023},
-      eprint={2307.06505},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
+@ARTICLE{yao2024waterscenes,
+  author={Yao, Shanliang and Guan, Runwei and Wu, Zhaodong and Ni, Yi and Huang, Zile and Liu, Ryan Wen and Yue, Yong and Ding, Weiping and Lim, Eng Gee and Seo, Hyungjoon and Man, Ka Lok and Ma, Jieming and Zhu, Xiaohui and Yue, Yutao},
+  journal={IEEE Transactions on Intelligent Transportation Systems}, 
+  title={WaterScenes: A Multi-Task 4D Radar-Camera Fusion Dataset and Benchmarks for Autonomous Driving on Water Surfaces}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-15},
+  doi={10.1109/TITS.2024.3415772}}
 ```
 
