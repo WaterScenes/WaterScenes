@@ -4,6 +4,7 @@
 <img src='image/cover.png' width=680 /> 
 
 * Website: [https://waterscenes.github.io](https://waterscenes.github.io)
+* TITS: [https://ieeexplore.ieee.org/document/10571852](https://ieeexplore.ieee.org/document/10571852)
 * arXiv: [https://arxiv.org/abs/2307.06505](https://arxiv.org/abs/2307.06505)
 * Zhihu: [https://zhuanlan.zhihu.com/p/651979604](https://zhuanlan.zhihu.com/p/651979604)
 * Video: [https://www.bilibili.com/video/BV1QH4y1m72V](https://www.bilibili.com/video/BV1QH4y1m72V)
