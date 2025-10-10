@@ -17,13 +17,14 @@
 - [Citation](#citation)
 
 ## Changelog
+- :star2: October 10, 2025: WaterScenes_Vision dataset (for vision-only tasks) released at [Baidu Netdisk](https://pan.baidu.com/s/1wqrs2ZDFUvY3QXj_h8r4Mg?pwd=data)
 - :fire: June 14, 2024: WaterScenes is accepted by IEEE Transactions on Intelligent Transportation Systems (TITS) [Paper](https://ieeexplore.ieee.org/document/10571852)
 - :star2: March 28, 2024: WaterScenes dataset released at [Baidu Netdisk](https://pan.baidu.com/s/1mfYKFh9jJOdpYgs2nTe2Qg?pwd=data), Google Drive [images](https://drive.google.com/drive/folders/1ts_Jl91FlhliurzIOxx6DP2qChCGLDBj?usp=sharing) and [others](https://drive.google.com/drive/folders/1SIwevcFfHXDIqlPcJEidAkAQ8AC-mW7g?usp=sharing)
 - Sep 26, 2023: Video released at [Website](https://waterscenes.github.io) and [BiliBili](https://www.bilibili.com/video/BV1QH4y1m72V)
 - July 21, 2023: Sample dataset released at [Google Drive](https://drive.google.com/uc?id=1j6BxP6tpaenYl8ADa9v-kC0I_jWob4Ji&export=download)
 - July 13, 2023: Website and Devkit released at [Website](https://waterscenes.github.io) and [GitHub](https://github.com/WaterScenes/WaterScenes)
 
-## Dataset
+## WaterScenes Dataset
 ### Introduction
 
 <img src='image/adverse-4.png' /> 
@@ -33,12 +34,8 @@
 * We provide **2D box-level** and **pixel-level** annotations for camera images, and **3D point-level** annotations for radar point clouds. We also offer precise timestamps for the synchronization of different sensors, as well as intrinsic and extrinsic parameters.
 * We provide a toolkit for radar point clouds that includes: **pre-processing**, **labeling**, **projection** and **visualization**, assisting researchers in processing and analyzing our dataset.
 
-
 ### USV Setup
 <img src='image/USV-setup.png' width=650 /> 
-
-### Data Collection
-<img src='image/collection.png' width=500 /> 
 
 ### Dataset Statistics
 The dataset includes 54,120 sets of RGB images, radar point clouds, GPS and IMU data, covering over 200,000 objects.
@@ -221,6 +218,9 @@ Each csv file contains a set of points in a specific timestamp:
 | magnetic_field_x      | magnetic field strength in x-axis      |
 | magnetic_field_y      | magnetic field strength in y-axis      |
 | magnetic_field_z      | magnetic field strength in z-axis      |
+
+## WaterScenes_Vision Dataset
+
 
 ## Devkit
 ### Installation
